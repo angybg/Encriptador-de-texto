@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8"> 
+        <meta http-equiv="X-UA-Compatible" content="IE-Edge, chrome=1">
+        <meta name="viewport" content="width=device-width">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+        <title>Encriptador</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header>
+            <img src="images/Logo.svg" alt="Logo">
+        </header>
+        <main class="contenedor-sec">
+            <div class="entrada">
+                <!--<section class="izquierda">-->
+                 <textarea class="text-ingres" name="textIn" id="txtentrada" cols="31" rows="10" placeholder="Ingrese el texto a encriptar o desencriptar aquí"></textarea>
+
+                <div class="warning">
+                    <img src="images/bi_exclamation-circle-fill.svg" alt="warningimg" class="warning1">
+                    <label class="warninglabel"> Sólo letras minúsculas y sin acentos.</label>
+                </div>
+                
+                <div class="boton">
+                    <button class="btn-encrip" id="encriptar" onclick="buttonEncriptar()">Encriptar</button>
+                    <button class="btn-desencrip" id="desencriptar" onclick="buttonDesencriptar()">Desencriptar
+                    </button>
+                </div>
+               <!-- </section>-->
+            </div>
+            <div class="salida">
+                <!--<section class="derecha">-->
+                <textarea class="txt-salida" id="txtsalida" cols="5" rows="30"></textarea>
+                <div class="ocultar">
+                    <img id="doll" src="images/Muñeco.svg" alt="Muñeco">
+                    <div class="mensaje">
+                        <h1 id="big">Ningún mensaje fue encontrado</h1>
+                        <h2 id="small">Ingrese el texto que desees encriptar o desencriptar.</h2>
+                    </div>
+                </div>
+                <button class="btn-copiar" id="copiar" onclick="buttonCopiar()">Copiar</button>        
+                <!--</section>-->
+            </div>
+        </main>
+        <script src="/CHALLENGES/CHALLENGE ONE/script.js"></script>
+    </body>
+</html>
