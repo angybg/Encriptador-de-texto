@@ -3,7 +3,8 @@ const salida = document.querySelector(".txt-salida");
 const copy = document.querySelector(".btn-copiar");
 const oculto = document.querySelector(".ocultar");
 copy.style.display= "none";
-oculto.style.display = ""
+oculto.style.display = "";
+salida.style.display = "none";
 
 function validarTxt(){
     let textoEs = document.querySelector(".text-ingres").value;
